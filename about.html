@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About | Zack Held PhD</title>
+<meta name="description" content="Learn about Dr. Zack Held, Ph.D. — doctoral-level psychologist, higher-education leader, and behavioral health program strategist with expertise in university mental health systems and graduate training."/>
+<link rel="canonical" href="https://zackheld.netlify.app/about.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://zackheld.netlify.app/#person",
+      "name": "Zack Held",
+      "alternateName": ["Zachary Held", "Zachary David Held", "Zack Held PhD", "Zachary Held PhD"],
+      "jobTitle": "Doctoral-Level Psychologist | Higher-Education Leader | Behavioral Health Program Strategist",
+      "url": "https://zackheld.netlify.app/",
+      "image": "https://zackheld.netlify.app/images/hero.jpg",
+      "description": "Dr. Zack Held, Ph.D. is a doctoral-level psychologist with expertise in university mental health systems, graduate education leadership, clinician training, and behavioral health program development across academic and medical training environments.",
+      "sameAs": [
+        "https://pinterest.com/ZackDavidHeld","https://soundcloud.com/zackdavidheld","https://bio.site/zackheld","https://linktr.ee/zackheld","https://issuu.com/zackheld","https://my.archdaily.com/us/@zack-david-held","https://www.goodreads.com/user/show/196271903-zack-held","https://github.com/zackdavidheld","https://www.beatstars.com/zackheld","https://huggingface.co/zackdavidheld","https://www.tumblr.com/zackdavidheld","https://bandcamp.com/zackdavidheld","https://vimeo.com/zackdavidheld","https://wikialpha.co/wiki/User:Zack_David_Held","https://www.podbean.com/user-LYzXG2hJrcwN","https://clarity.fm/zackdavid-held","https://www.reddit.com/user/Primary_Rhubarb_336/","https://www.dailymotion.com/ZackDavidHeld","https://substack.com/@zackdavidheld","https://mastodon.social/@ZackDavidHeld","https://zackheld.com/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zackheld.netlify.app/#website",
+      "url": "https://zackheld.netlify.app/",
+      "name": "Zack Held PhD",
+      "publisher": {"@id": "https://zackheld.netlify.app/#person"}
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://zackheld.netlify.app/about.html",
+      "url": "https://zackheld.netlify.app/about.html",
+      "name": "About Zack Held PhD",
+      "mainEntity": {"@id": "https://zackheld.netlify.app/#person"}
+    }
+  ]
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co/','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Zack Held';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Zack<span> Held PhD</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>Zack Held, Ph.D.</h1>
+  <p class="pg-sub">Doctoral-Level Psychologist | Higher-Education Leader | Behavioral Health Program Strategist</p>
+</div>
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="Dr. Zack Held PhD"/></div>
+    <div>
+      <div class="pc-nm">Zack Held, Ph.D.</div>
+      <div class="pc-rl">Doctoral-Level Psychologist &amp; Higher-Education Leader</div>
+      <div class="pc-lc">United States</div>
+    </div>
+  </div>
+</div>
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+      <div class="csec">
+        <p class="cey">University Mental Health Systems</p>
+        <h2>Designing Institutions That Support Student Well-Being</h2>
+        <p>Dr. Zachary David Held has built his professional identity around a straightforward conviction: institutions that invest in the psychological well-being of their students and trainees produce better outcomes — academically, professionally, and organizationally. His work in university mental health focuses on the design and oversight of behavioral health services tailored to the unique pressures of academic environments, from undergraduate stress to the distinctive demands of graduate and professional training programs.</p>
+        <p>The prevention frameworks Dr. Held has developed draw on evidence-based approaches to <a href="student-wellbeing-and-academic-persistence.html">student well-being and academic persistence</a>, addressing the systemic factors — workload, identity development, institutional culture — that predict dropout, burnout, and disengagement. You can also follow his writing and professional perspectives through <a href="https://bio.site/zackheld" target="_blank" rel="noopener">his bio.site profile</a>, where he shares updates across platforms.</p>
+      </div>
+      <div class="csec">
+        <p class="cey">Graduate Teaching &amp; Professional Preparation</p>
+        <h2>Training the Next Generation of Psychology Practitioners</h2>
+        <p>As a graduate-level instructor and mentor, Zack Held PhD has taught and supervised across multiple psychology doctoral programs, contributing to curriculum development, competency frameworks, and the professional formation of emerging practitioners. His pedagogy emphasizes ethical rigor, evidence-based reasoning, and the practical demands of working in complex institutional systems.</p>
+        <p>Beyond content instruction, Dr. Held has contributed to the organizational structures that support trainee well-being — recognizing that graduate training environments themselves must model the psychological health they seek to promote. His <a href="burnout-prevention-frameworks-for-graduate-trainees.html">work on burnout prevention in psychology programs</a> reflects this perspective. Professional peers and collaborators can connect with him through <a href="https://linktr.ee/zackheld" target="_blank" rel="noopener">his Linktree hub</a>.</p>
+      </div>
+      <div class="csec">
+        <p class="cey">Program Architecture &amp; Institutional Strategy</p>
+        <h2>Building Sustainable Mental Health Infrastructure</h2>
+        <p>Dr. Held's approach to program development is shaped by a systems-thinking orientation: any behavioral health initiative is only as effective as the institutional structures that support it. He has led the design and implementation of prevention frameworks, well-being programming, and organizational initiatives across both academic and medical training environments, always attending to questions of sustainability, scalability, and cultural fit.</p>
+        <p>This work requires fluency in both the psychological literature and the practical realities of institutional administration — budget constraints, stakeholder alignment, accreditation demands, and staff capacity. Dr. Held bridges these domains with a pragmatic, evidence-informed approach. His writing on <a href="trauma-informed-approaches-in-higher-education.html">trauma-informed institutional design</a> explores how psychological principles can reshape organizational culture at scale. Institutional partners and collaborators can learn more through <a href="https://clarity.fm/zackdavid-held" target="_blank" rel="noopener">his Clarity.fm profile</a>.</p>
+      </div>
+      <div class="csec">
+        <p class="cey">Postdoctoral Training &amp; Advanced Clinical Context</p>
+        <h2>Insights from High-Acuity Medical Environments</h2>
+        <p>Dr. Held completed a postdoctoral fellowship in pediatric oncology, hematology, and bone marrow transplant (BMT) psychology — one of the most demanding and specialized training contexts in the field. Working with medically complex children and families, he developed advanced competencies in trauma-sensitive communication, interdisciplinary collaboration, and the psychological dimensions of high-stakes medical care.</p>
+        <p>These experiences now inform his organizational and educational work at the systems level. The communication frameworks, resilience strategies, and interdisciplinary thinking developed in pediatric oncology settings translate directly into how Dr. Held approaches institutional program design, faculty development, and the training of graduate-level practitioners in psychologically demanding roles.</p>
+      </div>
+      <div class="csec">
+        <p class="cey">Community Engagement &amp; Educational Outreach</p>
+        <h2>Mental Health Literacy Across Campuses and Organizations</h2>
+        <p>Beyond his institutional roles, Zachary Held PhD maintains an active presence in educational outreach, faculty development, and community mental health literacy efforts. He has contributed to recruitment programming, organizational presentations, and campus-level initiatives aimed at building broader awareness of the psychological dimensions of academic and professional life.</p>
+        <p>This outreach work reflects a belief that organizational change requires not only structural reform but also a shift in how institutions and individuals understand psychological well-being — what it looks like, what sustains it, and what erodes it. Dr. Held brings this educational orientation to every engagement, whether working with administrative leaders, faculty groups, or graduate trainees. Explore his professional writing and contributions via <a href="https://issuu.com/zackheld" target="_blank" rel="noopener">his Issuu publication archive</a>.</p>
+      </div>
+    </div>
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Degree</span><span class="fv">Ph.D., Psychology</span></div>
+        <div class="fr"><span class="fl">Focus</span><span class="fv">Higher Education &amp; Well-Being</span></div>
+        <div class="fr"><span class="fl">Postdoc</span><span class="fv">Pediatric Oncology &amp; BMT</span></div>
+        <div class="fr"><span class="fl">Roles</span><span class="fv">Educator, Strategist, Leader</span></div>
+        <div class="fr"><span class="fl">Keywords</span><span class="fv">Zack Held PhD</span></div>
+        <div class="fr"><span class="fl">Also Known As</span><span class="fv">Zachary David Held</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-about')">Follow Zack Held on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-about"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-about')">Zack Held in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-about"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2025 Zack Held PhD. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
