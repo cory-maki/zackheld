@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact | Zack Held PhD</title>
+<meta name="description" content="Contact Dr. Zack Held, Ph.D. — doctoral-level psychologist and higher-education leader available for professional inquiries related to program development, graduate training, and institutional well-being strategy."/>
+<link rel="canonical" href="https://zackheld.netlify.app/contact.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://zackheld.netlify.app/#person",
+      "name": "Zack Held",
+      "alternateName": ["Zachary Held", "Zachary David Held", "Zack Held PhD", "Zachary Held PhD"],
+      "jobTitle": "Doctoral-Level Psychologist | Higher-Education Leader | Behavioral Health Program Strategist",
+      "url": "https://zackheld.netlify.app/",
+      "image": "https://zackheld.netlify.app/images/hero.jpg",
+      "description": "Dr. Zack Held, Ph.D. is a doctoral-level psychologist with expertise in university mental health systems, graduate education leadership, clinician training, and behavioral health program development across academic and medical training environments.",
+      "sameAs": ["https://pinterest.com/ZackDavidHeld","https://soundcloud.com/zackdavidheld","https://bio.site/zackheld","https://linktr.ee/zackheld","https://issuu.com/zackheld","https://my.archdaily.com/us/@zack-david-held","https://www.goodreads.com/user/show/196271903-zack-held","https://github.com/zackdavidheld","https://www.beatstars.com/zackheld","https://huggingface.co/zackdavidheld","https://www.tumblr.com/zackdavidheld","https://bandcamp.com/zackdavidheld","https://vimeo.com/zackdavidheld","https://wikialpha.co/wiki/User:Zack_David_Held","https://www.podbean.com/user-LYzXG2hJrcwN","https://clarity.fm/zackdavid-held","https://www.reddit.com/user/Primary_Rhubarb_336/","https://www.dailymotion.com/ZackDavidHeld","https://substack.com/@zackdavidheld","https://mastodon.social/@ZackDavidHeld","https://zackheld.com/"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://zackheld.netlify.app/#website",
+      "url": "https://zackheld.netlify.app/",
+      "name": "Zack Held PhD",
+      "publisher": {"@id": "https://zackheld.netlify.app/#person"}
+    },
+    {
+      "@type": "ContactPage",
+      "@id": "https://zackheld.netlify.app/contact.html",
+      "url": "https://zackheld.netlify.app/contact.html",
+      "name": "Contact Zack Held PhD"
+    }
+  ]
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co/','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Zack Held';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-contact'],soc);
+    render(['sml-news-contact'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Zack<span> Held PhD</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a class="active" href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="cp-hero pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Get in Touch</p>
+  <h1>Contact Dr. Held</h1>
+  <p class="pg-sub">Professional inquiries welcome from academic institutions, training programs, and organizational partners.</p>
+</div>
+<div class="cc-wrap">
+  <div class="cc">
+    <div class="fp">
+      <h2>Send a message</h2>
+      <p class="fp-sub">Use this form to reach Dr. Held regarding professional collaboration, program consultation, or speaking and faculty development inquiries.</p>
+      <form class="cf2" onsubmit="return false">
+        <div><label>Full name</label><input type="text" placeholder="Your name"/></div>
+        <div><label>Email</label><input type="email" placeholder="email@example.com"/></div>
+        <div><label>Message</label><textarea placeholder="Your message..."></textarea></div>
+        <button class="btn-cf2" type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="ci">
+      <div class="ci-title">Let's connect.</div>
+      <div>
+        <div class="ci-lbl">Location</div>
+        <div class="ci-val">United States</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="acc-section" style="background:var(--off);padding-top:3rem">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-contact')">Follow Zack Held on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-contact"><div id="sml-soc-contact" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-contact')">Zack Held in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-contact"><div id="sml-news-contact" class="social-media-list"></div></div>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2025 Zack Held PhD. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
